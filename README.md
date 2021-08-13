@@ -1,3 +1,4 @@
+teest
 # Bring up a web server with Vagrant
 
 In this repo you will find instructions how to bring up a web server with installed Nginx using Vagrant. All necessary files might be find here.
