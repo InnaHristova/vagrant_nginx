@@ -1,5 +1,15 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "hashicorp/bionic64"
-  config.vm.provision :shell, path: "bootstrap.sh"
-  config.vm.network :forwarded_port, guest: 80, host: 4567
+
+  config.vm.define "host1" do |web|
+  web.vm.hostname = "host1"
+  web.vm.box = "hashicorp/bionic64"
+  web.vm.provision :shell, path: "bootstrap.sh"
+  web.vm.network "private_network", ip: "192.168.3.3"
+  web.vm.network :forwarded_port, guest: 80, host: 2977
+     web.vm.provider "virtualbox" do |v|
+     v.memory = 2048
+     v.cpus = 4
+     end
+  end
+
 end
