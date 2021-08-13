@@ -12,4 +12,10 @@ Vagrant.configure("2") do |config|
      end
   end
 
+  config.vm.define "host2" do |web|
+  web.vm.hostname = "host2"
+  web.vm.box = "hashicorp/bionic64"
+  web.vm.provision :shell, path: "bootstrap_files/bootstrap_host2.sh"
+  end
+
 end
