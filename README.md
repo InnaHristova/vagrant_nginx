@@ -82,7 +82,7 @@ The aim here is to access the html file hosted on host1 from host2
 
 https://learn.hashicorp.com/collections/vagrant/getting-started  
 https://www.vagrantup.com/docs/multi-machine  
-https://www.worldtimebuddy.com/
+https://www.vagrantup.com/docs/networking
   
   
 
