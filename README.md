@@ -2,7 +2,7 @@
 
 In this repo you will find instructions how to bring up two web servers with Vagrant. All necessary files might be find here.   
 
-## Machines details:
+## Machines' details:
 
 **VM** | VM1 | VM2
 ------------ | ------------- | -------------
@@ -78,7 +78,11 @@ The aim here is to access the html file hosted on host1 from host2
   
 ## Additional resources    
 
-For more information on how to use Vagrant you may visit https://learn.hashicorp.com/collections/vagrant/getting-started*
+*For more information on how to use Vagrant, you may visit:*    
+
+https://learn.hashicorp.com/collections/vagrant/getting-started  
+https://www.vagrantup.com/docs/multi-machine  
+https://www.worldtimebuddy.com/
   
   
 
